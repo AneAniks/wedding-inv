@@ -4,7 +4,6 @@ import {
   jsonResponse,
   readJsonObject,
   RequestError,
-  verifySameOrigin,
 } from "../../../../lib/rsvp-validation";
 import {
   authenticated,
@@ -47,8 +46,7 @@ export async function POST(request: Request) {
 
 export async function DELETE(request: Request) {
   try {
-    if (request.body) await readJsonObject(request);
-    else verifySameOrigin(request);
+    await readJsonObject(request, { allowEmptyBody: true });
     return jsonResponse({ authenticated: false }, 200, {
       "Set-Cookie": cookieHeader(request),
     });

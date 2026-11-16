@@ -48,6 +48,7 @@ export function verifySameOrigin(request: Request) {
 
 export async function readJsonObject(
   request: Request,
+  options: { allowEmptyBody?: boolean } = {},
 ): Promise<Record<string, unknown>> {
   const limit = 32_768;
   const chunks: Uint8Array[] = [];
@@ -70,6 +71,7 @@ export async function readJsonObject(
     }
   }
   verifySameOrigin(request);
+  if (!size && options.allowEmptyBody) return {};
   if (
     !request.headers
       .get("Content-Type")
