@@ -515,11 +515,11 @@ export default function Invitation() {
           <section className="venue-section section" id="celebration">
             <div className="venue-image">
               <img
-                src="/assets/venue.jpg"
+                src="/assets/venue.png"
                 alt={
                   language === "en"
-                    ? "Villa Ina, the wedding venue"
-                    : "Villa Ina, местото на прославата"
+                    ? "Villa Biljana, the wedding venue"
+                    : "Вила Билјана, местото на прославата"
                 }
                 loading="lazy"
               />
