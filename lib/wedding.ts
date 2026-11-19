@@ -1,11 +1,11 @@
 // Personalize the invitation here. These initial details come from the reference.
 export const wedding = {
-  names: { en: ["Sanja", "Martin"], mk: ["Сања", "Мартин"] },
-  start: "2026-08-16T18:30:00+02:00",
-  end: "2026-08-17T02:00:00+02:00",
+  names: { en: ["Ana Marija", "Gorjan"], mk: ["Ана Марија", "Горјан"] },
+  start: "2027-08-28T18:30:00+02:00",
+  end: "2027-08-29T02:00:00+02:00",
   timeZone: "Europe/Skopje",
-  venue: "Villa Ina",
-  mapsUrl: "https://maps.app.goo.gl/AihNju2pRsfWdUBo7",
+  venue: "Вила Билјана",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=%D0%92%D0%B8%D0%BB%D0%B0%20%D0%91%D0%B8%D0%BB%D1%98%D0%B0%D0%BD%D0%B0",
   timeline: [
     {
       time: "18:30 – 19:00",
